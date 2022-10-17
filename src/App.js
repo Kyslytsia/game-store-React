@@ -35,8 +35,6 @@ function App() {
       });
   };
 
-  let a = setTimeout(updateWeather, 0);
-
   return (
     <div className="App">
       <div className="App__input">
