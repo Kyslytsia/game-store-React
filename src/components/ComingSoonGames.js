@@ -24,6 +24,7 @@ function ComingSoonGames(props) {
                 </div>
               );
             }
+            return "";
           })}
         </div>
       </Link>

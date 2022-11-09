@@ -22,6 +22,8 @@ function AllGames(props) {
                 </div>
               );
             }
+
+            return "";
           })}
         </div>
       </Link>

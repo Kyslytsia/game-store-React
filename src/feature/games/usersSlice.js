@@ -27,6 +27,8 @@ export const usersSlice = createSlice({
           el.favorites = action.payload.favorites;
           el.cart = action.payload.cart;
         }
+
+        return "";
       });
     },
   },

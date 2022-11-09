@@ -6,17 +6,7 @@ export const gamesSlice = createSlice({
   initialState: {
     value: gamesData,
   },
-  reducers: {
-    setGameStatus: (state, action) => {
-      state.value.map((el) => {
-        if (el.name === action.payload) {
-          el.favorites = !el.favorites;
-        }
-      });
-    },
-  },
+  reducers: {},
 });
-
-export const { setGameStatus } = gamesSlice.actions;
 
 export default gamesSlice.reducer;

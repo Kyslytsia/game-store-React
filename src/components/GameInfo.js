@@ -83,6 +83,8 @@ function GameInfo(props) {
             </div>
           );
         }
+
+        return "";
       })}
     </div>
   );
