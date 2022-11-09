@@ -6,7 +6,7 @@
     position: absolute;
     top: 30px;
     right: 50px;
-    background-color: beige;
+    background-color: rgb(249, 249, 228);
     color: black;
     width: 400px;
     padding: 10px 20px;
@@ -46,6 +46,9 @@
 
 .cart-button {
     padding: 5px 15px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
     
 }
 
