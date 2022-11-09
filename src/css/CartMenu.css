@@ -5,7 +5,7 @@
 .cart-menu {
     position: absolute;
     top: 30px;
-    right: 50px;
+    right: 20px;
     background-color: rgb(249, 249, 228);
     color: black;
     width: 400px;
@@ -71,7 +71,7 @@
     }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px) and (max-width: 1000px) {
     .cart-menu {
         top: 30px;
         right: -20px;
