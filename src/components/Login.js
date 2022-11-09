@@ -34,7 +34,7 @@ function Login() {
       <div className="form-title">Войти</div>
       {wrongUser && <div style={{ color: "red" }}>Нет такого пользователя</div>}
 
-      <label>
+      <label className="label">
         <input
           className="input"
           type="email"
@@ -45,7 +45,7 @@ function Login() {
         />
       </label>
 
-      <label>
+      <label className="label">
         <input
           className="input"
           name="password"

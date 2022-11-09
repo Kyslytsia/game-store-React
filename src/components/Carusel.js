@@ -12,25 +12,25 @@ import {
 const items = [
   {
     src: "https://gepig.com/game_cover_bg_1190w/7338.jpg",
-    altText: "Call of Duty: Modern Warfare II",
-    caption: "Скоро",
+    altText: "",
+    caption: "",
     key: 1,
   },
   {
     src: "https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_god_of_war_ragnarok_02_2560x1080.jpg&height=506&sharpen",
-    altText: "God Of War Ragnarek",
-    caption: "Slide 2",
+    altText: "",
+    caption: "",
     key: 2,
   },
   {
     src: "https://www.gamewallpapers.com/img_script/wallpaper_dir/img.php?src=wallpaper_assassins_creed_valhalla_02_2560x1080.jpg&height=506&sharpen",
-    altText: "Assassin's Creed Вальгалла",
-    caption: "Slide 3",
+    altText: "",
+    caption: "",
     key: 3,
   },
 ];
 
-function Carusel(props) {
+function Carusel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -54,7 +54,7 @@ function Carusel(props) {
   const slides = items.map((item) => {
     return (
       <CarouselItem
-        className="custom-tag"
+        className="tag"
         tag="div"
         key={item.key}
         onExiting={() => setAnimating(true)}
@@ -87,20 +87,28 @@ function Carusel(props) {
               background: black;
             }`}
       </style>
-      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+      <Carousel
+        className="carusel"
+        activeIndex={activeIndex}
+        next={next}
+        previous={previous}
+      >
         <CarouselIndicators
+          className="carusel"
           items={items}
           activeIndex={activeIndex}
           onClickHandler={goToIndex}
         />
         {slides}
         <CarouselControl
-          direction="prev"
+          className="carusel"
+          // direction="prev"
           directionText="Previous"
           onClickHandler={previous}
         />
         <CarouselControl
-          direction="next"
+          className="carusel"
+          // direction="next"
           directionText="Next"
           onClickHandler={next}
         />

@@ -6,17 +6,6 @@
     position: relative;
 }
 
-.game-card-sale {
-    position: absolute;
-    width: 600px;
-    background-color: rgba(31,32,36,.97);
-    top: 100px ;
-    left: 100px;
-    border-radius: 15px;
-    color: white;
-    padding: 40px;
-}
-
 .price {
     font-size: 30px;
     margin-top: 40px;
@@ -55,6 +44,17 @@
     background-color: rgba(31,32,36,.97);
 }
 
+.game-card-sale {
+    position: absolute;
+    width: 600px;
+    background-color: rgba(31,32,36,.97);
+    top: 100px ;
+    left: 100px;
+    border-radius: 15px;
+    color: white;
+    padding: 40px;
+}
+
 .game-card-info {
     position: absolute;
     width: 1000px;
@@ -64,4 +64,152 @@
     left: 100px;
     padding: 30px;
     font-size: 18px;
+}
+
+@media (min-width: 375px) and (max-width: 1000px) {
+    .bg {
+        height: 900px;
+        width: 100%;
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: relative;
+        background-color: black;
+    }
+
+    .game-card-sale {
+        width: 350px;
+        left: 12px;
+        top: 200px;
+        padding: 20px;
+        z-index: 1;
+    }
+
+    .game-card-info {
+        display: none;
+    }
+
+    .mobile-game-card-info {
+        padding: 370px 20px 0 20px;
+        color: white;
+    }
+
+    .price {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    
+    .name {
+        font-size: 20px;
+        line-height: 5px;
+        margin-bottom: 10px;
+    }
+
+    .buy {
+        height: 30px;
+        width: 70%;
+        border-radius: 25px;
+        font-size: 15px;
+    } 
+    
+    .heart {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 20px;
+        border: none;
+        background-color: rgba(31,32,36,.97);
+    }
+
+    .buttons {
+        margin-top: 10px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 431px) and (max-width: 514px) {
+    .bg {
+        height: 800px;
+        width: 100%;
+        background-size: 120vh;
+        background-position: top;
+        position: relative;
+        background-color: black;
+    }
+
+    .game-card-sale {
+        left: 20px;
+        top: 200px;
+    }
+}
+
+@media (min-width: 516px) and (max-width: 645px) {
+    .bg {
+        height: 750px;
+        width: 100%;
+        background-size: 150vh;
+        background-position: top;
+        position: relative;
+        background-color: black;
+    }
+
+    .game-card-sale {
+        left: 20px;
+        top: 200px;
+    }
+}
+
+@media (min-width: 646px) and (max-width: 686px) {
+    .bg {
+        height: 750px;
+        width: 100%;
+        background-size: 160vh;
+        background-position: top;
+       
+    }
+
+    .game-card-sale {
+        left: 20px;
+        top: 230px;
+    }
+
+    .mobile-game-card-info {
+        padding: 400px 20px 0 20px;
+        color: white;
+    }
+}
+
+@media (min-width: 687px) and (max-width: 772px) {
+    .bg {
+        height: 700px;
+        width: 100%;
+        background-size: 180vh;
+        background-position: top;
+       
+    }
+
+    .game-card-sale {
+        left: 20px;
+        top: 250px;
+    }
+
+    .mobile-game-card-info {
+        padding: 440px 20px 0 20px;
+        color: white;
+    }
+}
+
+@media (min-width: 773px) and (max-width: 800px) {
+    .bg {
+        height: 700px;
+        width: 100%;
+        background-size: 210vh;
+        background-position: top;
+       
+    }
+
+    .mobile-game-card-info {
+        padding: 490px 20px 0 20px;
+        color: white;
+    } 
 }

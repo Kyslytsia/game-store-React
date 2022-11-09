@@ -80,6 +80,7 @@ function GameInfo(props) {
               </div>
 
               <div className="game-card-info">{el.info}</div>
+              <div className="mobile-game-card-info">{el.info}</div>
             </div>
           );
         }

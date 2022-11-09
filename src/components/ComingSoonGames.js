@@ -1,4 +1,4 @@
-import "../css/gamesStyle.css";
+import "../css/ComingSoonGames.css";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -15,12 +15,16 @@ function ComingSoonGames(props) {
                 <div
                   onClick={() => props.getGameName(el.name)}
                   style={{ backgroundImage: el.imgS }}
-                  className="game-card"
+                  className="soon-game-card"
                   key={el.name}
                 >
-                  <img className="game-img" src={el.imgS} alt={el.name}></img>
+                  <img
+                    className="soon-game-img"
+                    src={el.imgS}
+                    alt={el.name}
+                  ></img>
 
-                  <span className="game-name">{el.name}</span>
+                  <div className="soon-game-name">{el.name}</div>
                 </div>
               );
             }

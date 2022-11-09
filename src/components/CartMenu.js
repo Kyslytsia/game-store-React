@@ -5,7 +5,6 @@ import CartGame from "./CartGame";
 function CartMenu({ onClick }) {
   const cart = useSelector((state) => state.account.value.cart);
   const totalPrice = cart.reduce((acc, game) => (acc += game.price), 0);
-  console.log(totalPrice);
 
   return (
     <div className="cart-menu">

@@ -22,17 +22,12 @@ body {
     color: white;
 }
 
-.link {
-    text-decoration: none;
-    color: black;
-}
-
-.link:hover {
-    color: black;
+.colection-link {
+    display: none;
 }
 
 .account {
-    /* width: 200px; */
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,13 +48,23 @@ body {
     background-size: cover;
     margin-top: 30px;
 }
+
+.carousel-indicators [data-bs-target] {
+    display: none;
+}
+
+.tag {
+    max-width: 100%;
+    height: 500px;
+}
+
 .favorites {
     display: flex;
     position: relative;
     margin: 0 15px;
 }
 
-.basket, .logout { 
+.cart, .logout { 
     margin: 0 15px;
     cursor: pointer;
 }
@@ -71,6 +76,139 @@ body {
     left: 9px;
     top: 2px;
 }
+
+/* .menu {
+    margin-right: 20px;
+} */
+
+@media (max-width: 399px) {
+    .tag {
+        height: 100px;
+    }
+
+    .account {
+        display: none;
+    }
+
+    .favorites {
+        margin: 0;
+    }
+
+    .img {
+        width: 15px;
+    }
+
+    .title, .colection {
+        font-size: 16px;
+    } 
+
+    .cart {
+        margin: 0;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    .tag {
+        height: 150px;
+    }
+    .account {
+        display: none;
+    }
+
+    .title, .colection {
+        font-size: 16px;
+    } 
+}
+
+@media (min-width: 601px) and (max-width: 800px){
+    .tag {
+        height: 200px;
+    }
+
+    .title, .colection {
+        font-size: 16px;
+    } 
+
+    .account {
+        display: none;
+    }
+
+    .cart {
+        /* margin: 0; */
+    }
+}
+
+@media (min-width: 801px) and (max-width: 850px)  {
+    .tag {
+        height: 200px;
+    }
+
+    .mobile-cart, .mobile-menu {
+        display: none;
+    }
+
+    .mobile-name-title {
+        display: none;
+    }
+
+    .colection-link, .colection, .title {
+        display: block;
+        font-size: 15px;
+    }
+
+    .account {
+        width: 300px;
+    }
+}
+
+@media (min-width: 851px) {
+    .tag {
+        height: 250px;
+    }
+
+    .mobile-cart, .mobile-menu {
+        display: none;
+    }
+
+    .mobile-name-title {
+        display: none;
+    }
+
+    .colection-link, .colection, .title {
+        display: block;
+        font-size: 30px;
+    }
+
+    .account {
+        width: 300px;
+    }
+}
+
+@media (min-width: 990px) {
+    .tag {
+     height: 300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tag {
+     height: 400px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .tag {
+     height: 500px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .tag {
+     height: 600px;
+    }
+}
+
+
 
 
 

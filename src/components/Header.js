@@ -3,6 +3,7 @@ import { logout } from "../feature/games/accountSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { setUserInfo } from "../feature/games/usersSlice";
 import { useNavigate } from "react-router-dom";
+import PositionedMenu from "./PositionedMenu";
 import Cart from "./Cart";
 
 function Header() {
@@ -17,11 +18,13 @@ function Header() {
         <span>GAME STORE</span>
       </Link>
 
-      <div className="link">
+      <div className="colection-link">
         <Link className="colection" to="/all-games">
           <span>Колекция Игр</span>
         </Link>
       </div>
+
+      <div className="mobile-name-title">{isLogin && "Hi, " + user.name}</div>
 
       <div className="account">
         {isLogin ? (
@@ -47,6 +50,7 @@ function Header() {
 
         <Link to="/favorites" className="favorites">
           <img
+            className="img"
             alt="img"
             width="25"
             src={require("../img/heart.svg").default}
@@ -56,9 +60,16 @@ function Header() {
           </div>
         </Link>
 
-        <div to="/cart" className="basket">
+        <div className="cart">
           <Cart />
         </div>
+      </div>
+
+      <div className="mobile-menu">
+        <PositionedMenu />
+      </div>
+      <div className="cart mobile-cart">
+        <Cart />
       </div>
     </header>
   );

@@ -49,7 +49,7 @@ function Registration() {
       <div className="form-title">Зарегистрироваться</div>
       {wrongEmail && <div style={{ color: "red" }}>такой email существует</div>}
       {wrongPassword && <div style={{ color: "red" }}>неправильный пароль</div>}
-      <label>
+      <label className="label">
         <input
           className="input"
           type="text"
@@ -60,7 +60,7 @@ function Registration() {
         />
       </label>
 
-      <label>
+      <label className="label">
         <input
           className="input"
           type="email"
@@ -71,7 +71,7 @@ function Registration() {
         />
       </label>
 
-      <label>
+      <label className="label">
         <input
           className="input"
           name="password"
@@ -82,7 +82,7 @@ function Registration() {
         />
       </label>
 
-      <label>
+      <label className="label">
         <input
           className="input"
           name="verify-password"

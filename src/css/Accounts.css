@@ -6,14 +6,16 @@
 
 .login, .registration {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
+    margin: 20px;
+}
+
+.label {
+    width: 80%;
 }
 
 .form-title {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .input {
@@ -34,4 +36,63 @@
 .registration-status {
     font-size: 30px;
     color: greenyellow;
+}
+
+@media (min-width: 375px) and (max-width: 900px) {
+    .forms {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .login, .registration {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-title {
+        font-size: 25px;
+        margin-bottom:20px;
+    }
+
+    .label {
+        width: 80%;
+    }
+
+    .input {
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+
+    .label {
+        width: 80%;
+    }
+
+}
+
+@media (min-width: 1900px) {
+
+    .login, .registration {
+        margin: 0 90px;
+    }
+
+    .label {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 2200px) {
+
+    .login, .registration {
+        margin: 0 120px;
+    }
+
+    .label {
+        width: 100%;
+    }
+
 }

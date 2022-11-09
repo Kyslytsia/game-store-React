@@ -9,6 +9,7 @@ function Cart() {
   return (
     <div className="cart-block">
       <img
+        className="img"
         alt="img"
         width="20"
         src={require("../img/cart.svg").default}

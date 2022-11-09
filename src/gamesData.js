@@ -1,6 +1,6 @@
 let gamesData = [
   {
-    name: "Call of Duty®: Modern Warfare® II",
+    name: "Call of Duty: MW II",
     price: 2399,
     favorites: false,
     imgS: "https://image.api.playstation.com/vulcan/ap/rnd/202205/2017/Ry0b7FGqNjHQvNRpRE9RjU3I.png?w=440&thumb=false",
