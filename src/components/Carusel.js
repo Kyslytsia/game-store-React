@@ -70,7 +70,7 @@ function Carusel() {
 
         <CarouselCaption
           key={item.key}
-          // className="text-danger"
+          className="text-danger"
           captionText={item.caption}
           captionHeader={item.altText}
         />
@@ -80,13 +80,13 @@ function Carusel() {
 
   return (
     <div className="carusel-block">
-      <style>
+      {/* <style>
         {`.custom-tag {
               max-width: 100%;
               height: 500px;
               background: black;
             }`}
-      </style>
+      </style> */}
       <Carousel
         className="carusel"
         activeIndex={activeIndex}

@@ -43,7 +43,7 @@ body {
 }
 
 .carusel-block {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     background-size: cover;
     margin-top: 30px;
@@ -77,13 +77,9 @@ body {
     top: 2px;
 }
 
-/* .menu {
-    margin-right: 20px;
-} */
-
-@media (max-width: 399px) {
+@media (min-width: 375px) and (max-width: 399px) {
     .tag {
-        height: 100px;
+        height: 130px;
     }
 
     .account {
@@ -131,10 +127,6 @@ body {
 
     .account {
         display: none;
-    }
-
-    .cart {
-        /* margin: 0; */
     }
 }
 
