@@ -1,0 +1,50 @@
+.cart-block {
+    position: relative;
+}
+
+.cart-menu {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    background-color: beige;
+    color: black;
+    width: 400px;
+    padding: 10px 20px;
+    z-index: 2;
+}
+
+.cart-menu__arrange {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 1px solid gray;
+}
+
+.cart-menu__total-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.cart-length {
+    top: -10px;
+    right:-15px;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-game {
+    display: flex;
+    line-height: 30px;
+    justify-content: space-between;
+}
+
+.cart-button {
+    padding: 5px 15px;
+    
+}
