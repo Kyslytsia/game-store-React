@@ -5,7 +5,6 @@ import MenuItem from "@mui/material/MenuItem";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../feature/games/accountSlice";
-import { fontSize } from "@mui/system";
 
 export default function PositionedMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
