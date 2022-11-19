@@ -28,7 +28,7 @@ export default function PositionedMenu() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        style={{ color: "white", fontSize: "15px" }}
+        style={{ color: "white" }}
       >
         menu
       </Button>
