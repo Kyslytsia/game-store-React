@@ -5,6 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { logout } from "../feature/games/accountSlice";
+import { fontSize } from "@mui/system";
 
 export default function PositionedMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,14 +22,15 @@ export default function PositionedMenu() {
   return (
     <div>
       <Button
+        className="button-menu"
         id="demo-positioned-button"
         aria-controls={open ? "demo-positioned-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
-        style={{ color: "white" }}
+        style={{ color: "white", fontSize: "15px" }}
       >
-        Menu
+        menu
       </Button>
       <Menu
         className="menu"

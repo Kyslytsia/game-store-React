@@ -65,11 +65,13 @@ function Header() {
         </div>
       </div>
 
-      <div className="mobile-menu">
-        <PositionedMenu />
-      </div>
-      <div className="cart mobile-cart">
-        <Cart />
+      <div className="account-mobile">
+        <div className="mobile-menu">
+          <PositionedMenu />
+        </div>
+        <div className="cart mobile-cart">
+          <Cart />
+        </div>
       </div>
     </header>
   );

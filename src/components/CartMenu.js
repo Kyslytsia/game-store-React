@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import "../css/CartMenu.css";
 import CartGame from "./CartGame";
 
-function CartMenu({ onClick }) {
+function CartMenu() {
   const cart = useSelector((state) => state.account.value.cart);
   const totalPrice = cart.reduce((acc, game) => (acc += game.price), 0);
 
@@ -19,9 +19,7 @@ function CartMenu({ onClick }) {
             <span>Итого:</span>
             <span>{totalPrice} UAH</span>
           </div>
-          <button className="cart-button" size="m" onClick={onClick}>
-            Оформить заказ
-          </button>
+          <button className="cart-button">Оформить заказ</button>
         </div>
       ) : (
         ""
